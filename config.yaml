@@ -1,3 +1,4 @@
+
 project:
   name: pneumonia-detection
   seed: 42
@@ -11,13 +12,17 @@ data:
 training:
   epochs: 20
   learning_rate: 0.001
-  num_classes: 2
+  num_workers: 2
 
 model:
   architecture: resnet18
   pretrained: true
+  num_classes: 2
 
-paths:
-  model_dir: models
-  logs_dir: logs
-  reports_dir: report
+evaluation:
+  metrics:
+    - accuracy
+    - precision
+    - recall
+    - f1_score
+    - roc_auc

@@ -1,23 +1,25 @@
+
 # Dataset
 data/
 
 # Models
 models/
-*.pt
-*.pth
-*.h5
 
 # Logs
 logs/
 runs/
-wandb/
 
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-.venv/
+*.pkl
+*.pth
+*.pt
+
+# Environments
 venv/
+.venv/
+env/
 
 # Jupyter
 .ipynb_checkpoints/
@@ -26,6 +28,6 @@ venv/
 .vscode/
 .idea/
 
-# System
+# OS
 .DS_Store
 Thumbs.db
