@@ -1,0 +1,31 @@
+# Dataset
+data/
+
+# Models
+models/
+*.pt
+*.pth
+*.h5
+
+# Logs
+logs/
+runs/
+wandb/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db

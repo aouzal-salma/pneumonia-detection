@@ -1,0 +1,23 @@
+project:
+  name: pneumonia-detection
+  seed: 42
+
+data:
+  raw_dir: data/raw/chest_xray
+  processed_dir: data/processed
+  image_size: 224
+  batch_size: 32
+
+training:
+  epochs: 20
+  learning_rate: 0.001
+  num_classes: 2
+
+model:
+  architecture: resnet18
+  pretrained: true
+
+paths:
+  model_dir: models
+  logs_dir: logs
+  reports_dir: report
